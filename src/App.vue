@@ -3,8 +3,10 @@ const message = 'Hello World';
 </script>
 
 <template>
-  <div style="text-align: center; padding: 2rem">
-    <h1>{{ message }}</h1>
-    <p>Vue + TypeScript + Vite starter</p>
+  <div class="min-h-screen bg-gray-50 flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">{{ message }}</h1>
+      <p class="text-lg text-gray-600">Vue + TypeScript + Vite + Tailwind CSS</p>
+    </div>
   </div>
 </template>
