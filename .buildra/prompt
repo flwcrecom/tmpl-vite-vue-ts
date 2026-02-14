@@ -1,0 +1,6 @@
+CRITICAL Vue + Vite WebContainer Rules:
+- package.json MUST have "type": "module"
+- vite.config.ts uses ESM imports
+- index.html MUST exist at project root with <script type="module" src="/src/main.ts">
+- ALWAYS use `npm run dev` to start — never use bare `vite`
+- Vue single-file components (.vue) use <script setup lang="ts"> for TypeScript
