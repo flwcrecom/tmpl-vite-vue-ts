@@ -1,6 +1,11 @@
-CRITICAL Vue + Vite WebContainer Rules:
-- package.json MUST have "type": "module"
-- vite.config.ts uses ESM imports
-- index.html MUST exist at project root with <script type="module" src="/src/main.ts">
-- ALWAYS use `npm run dev` to start — never use bare `vite`
-- Vue single-file components (.vue) use <script setup lang="ts"> for TypeScript
+This is a Vue 3 + Vite + TypeScript project with Tailwind CSS.
+
+STYLING RULES:
+- Use Tailwind CSS utility classes for ALL styling in <template> blocks
+- Do NOT use <style scoped> blocks for layout/spacing — use Tailwind classes
+- Follow mobile-first responsive design (sm:, md:, lg: breakpoints)
+
+IMPORTANT:
+- Always run `npm install && npm run dev` to start
+- Use Composition API with <script setup lang="ts">
+- Never use `vite` directly — always use `npm run dev`
